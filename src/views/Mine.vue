@@ -1,14 +1,15 @@
 <template>
-  <div>{{msg}}</div>
+  <h1>我的</h1>
 </template>
 
-<script>
+<script lang="ts">
 import {defineComponent} from 'vue'
+
 export default defineComponent({
-  data () {
-    return {
-      msg: 'Hello Vue3.0'
-    }
-  }
+  name: "Mine"
 })
 </script>
+
+<style scoped>
+
+</style>
