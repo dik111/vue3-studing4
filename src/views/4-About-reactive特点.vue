@@ -5,21 +5,20 @@
   </div>
 </template>
 <script>
-import {defineComponent, reactive, toRefs, ref } from 'vue'
+import {defineComponent, reactive } from 'vue'
 export default defineComponent({
   setup () {
-    const count = ref(0)
     const state = reactive({
-      count: count
+      count : 0
     })
-
     function add() {
       state.count ++
     }
+
     return {
       add,
       ...state
     }
-  }
+    }
 })
 </script>
